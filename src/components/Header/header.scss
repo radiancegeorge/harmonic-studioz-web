@@ -1,0 +1,45 @@
+.header {
+  background-color: var(--light-blue);
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    background-color: var(--light-blue);
+    z-index: 2;
+    ul {
+      li {
+        display: inline-block;
+        margin: 0 calc(64px / 2);
+        a {
+          display: block;
+          color: var(--grey);
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    .hire__us {
+      color: var(--white);
+      font-size: 18px;
+      display: block;
+      padding: 8px 28px;
+      background: var(--gradient);
+      font-weight: 500;
+      border-radius: 6px;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .half__circle {
+    height: 100px;
+    background: var(--gradient);
+    position: absolute;
+    width: 100px;
+    clip-path: circle(50px at 50px 50px);
+    right: 10px;
+    top: 0px;
+    z-index: 1;
+  }
+}
