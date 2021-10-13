@@ -77,4 +77,95 @@
       bottom: 0;
     }
   }
+  .what__we__do {
+    background-color: var(--light-blue);
+    padding: 64px 0;
+
+    .cover__ {
+      max-width: calc(100% - 78px);
+      margin-left: auto;
+      .what__offer {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin-bottom: 48px;
+        h1 {
+          margin-right: 32px;
+          font-weight: 800;
+          font-size: 64px;
+          max-width: 310px;
+          line-height: 78px;
+
+          color: var(--black);
+          span {
+            font-size: 18px;
+            display: block;
+            line-height: 22px;
+          }
+        }
+        .question {
+          max-width: 104px;
+        }
+      }
+      .image__slider {
+        overflow: hidden;
+        .slider {
+          display: flex;
+          transition: 0.8s all;
+          .cover {
+            text-align: center;
+            font-weight: 600;
+            font-size: 25px;
+            color: var(--grey);
+            p {
+              margin-top: 33px;
+            }
+            .images {
+              margin: 0 calc(48px / 2);
+            }
+          }
+        }
+      }
+      .slider__controls {
+        margin-top: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        & > div {
+          color: var(--grey);
+          cursor: pointer;
+          font-size: 40px;
+          &:nth-of-type(1) {
+            margin-right: 56px;
+          }
+        }
+      }
+    }
+  }
+  .partners {
+    background-color: white;
+    margin: 64px 0;
+    h1 {
+      font-size: 64px;
+      color: #026902;
+      line-height: 78px;
+      margin-left: 78px;
+      span {
+        font-size: 18px;
+        display: block;
+        line-height: 21px;
+      }
+    }
+    .partner__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 48px;
+      & > div {
+        background-color: #ffe3f6;
+        min-width: 192px;
+        min-height: 192px;
+      }
+    }
+  }
 }
