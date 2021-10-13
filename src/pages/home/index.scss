@@ -392,6 +392,22 @@
           &::-webkit-scrollbar {
             display: none;
           }
+          .cover {
+            flex-direction: column;
+
+            .quote {
+              display: none;
+            }
+            .first__section {
+              margin: auto !important;
+            }
+            .text {
+              text-align: center !important;
+            }
+            p {
+              text-align: center !important;
+            }
+          }
         }
       }
     }

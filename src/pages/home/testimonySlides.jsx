@@ -4,7 +4,7 @@ import { Quote } from "../../img/quote";
 import { sliderImages } from "../../utils/sliderImages";
 
 const TestimonySlides = () => {
-  const sliderImageWidth = 520;
+  const [sliderImageWidth, setWidth] = useState(520);
   const slider = useRef(null);
   const [sliderWidth, setSliderWidth] = useState({
     scrollWidth: 0,
@@ -19,8 +19,16 @@ const TestimonySlides = () => {
       clientWidth: slider.current.clientWidth,
       scrollWidth: slider.current.scrollWidth,
     });
-  }, []);
 
+    if (slider.current.clientWidth <= 600) {
+      setWidth(slider.current.clientWidth);
+    }
+  }, []);
+  window.addEventListener("resize", () => {
+    if (slider?.current?.clientWidth <= 600) {
+      setWidth(slider?.current?.clientWidth);
+    }
+  });
   const handleFoward = () => {
     const { scrollWidth, clientWidth } = sliderWidth;
     const remaining = scrollWidth - (currentOffset + clientWidth);
