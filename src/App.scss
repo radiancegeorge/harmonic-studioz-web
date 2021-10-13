@@ -30,3 +30,10 @@ html {
 .active__link {
   color: #47fa37 !important;
 }
+
+@media (max-width: 599px) {
+  .container {
+    max-width: 120%;
+    padding: 0 20px;
+  }
+}

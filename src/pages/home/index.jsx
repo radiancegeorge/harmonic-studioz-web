@@ -40,6 +40,10 @@ const Home = () => {
         }}
       />
       {location.hash !== "#about" && <SliderSection />}
+
+      <section className="what__we__do__">
+        <div className="container"></div>
+      </section>
       <Partners />
       <TestimonySlides />
     </div>

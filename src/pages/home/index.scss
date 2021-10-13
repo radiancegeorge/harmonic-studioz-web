@@ -252,3 +252,120 @@
     }
   }
 }
+
+@media (max-width: 559px) {
+  .home {
+    .jumbotron {
+      height: fit-content;
+      .block__01 {
+        transform: scale(0.8);
+        transform-origin: 40px -500px;
+        width: 120%;
+        height: 700px;
+        .logo {
+          display: none;
+        }
+        .everything__tech {
+          h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 100%;
+            text-align: center;
+          }
+          .img__pc {
+            position: static;
+            transform: scale(0.8);
+          }
+          p {
+            text-align: center;
+          }
+          .link__reach {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+          }
+          .socials {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            li {
+              margin: 0;
+              a {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .what__we__do {
+      padding-bottom: 0;
+      .cover__ {
+        margin: 0;
+        max-width: 120%;
+        width: 120%;
+        transform: scale(0.8);
+        transform-origin: 40px 0;
+        padding: 0;
+        .slider__controls {
+          margin-top: 20px;
+          display: none;
+        }
+        .image__slider {
+          overflow-x: scroll;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    }
+    .partners {
+      h1 {
+        text-align: center;
+        transform: scale(0.8);
+        transform-origin: 40px 0;
+      }
+      .partner__container {
+        overflow-x: scroll;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        transform: scale(0.8);
+        transform-origin: 40px 0;
+        min-width: 120%;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        & > div {
+          margin-right: 16px;
+        }
+      }
+    }
+    .testimonies {
+      padding-bottom: 0;
+      .cover__ {
+        transform: scale(0.8);
+        transform-origin: 40px 0;
+        min-width: 120%;
+        .what__offer {
+          text-align: center;
+        }
+        .slider__controls {
+          display: none;
+        }
+        .image__slider {
+          overflow-x: scroll;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

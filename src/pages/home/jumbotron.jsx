@@ -26,6 +26,9 @@ const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
                 <span className="gradient__text">eVERYTHING TECH</span>
                 {mainHeader}
               </h1>
+              <div className={`img__pc ${revealPcImage && "reveal__pc"}`}>
+                <img src={pcImg} alt="" width="100%" />
+              </div>
               <p>{mainText}</p>
               <div className="link__reach">
                 <div className="extra__bg"></div>
@@ -57,9 +60,6 @@ const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
               </ul>
             </div>
           </div>
-        </div>
-        <div className={`img__pc ${revealPcImage && "reveal__pc"}`}>
-          <img src={pcImg} alt="" width="100%" />
         </div>
       </div>
     </div>

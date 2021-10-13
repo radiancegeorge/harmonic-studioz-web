@@ -36,3 +36,20 @@
     }
   }
 }
+
+@media (max-width: 599px) {
+  .footer {
+    padding-bottom: 10px;
+    .main {
+      transform: scale(0.7);
+      transform-origin: 40px 0;
+      min-width: 137%;
+      .contact__detail {
+        flex-direction: column;
+        .number {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
