@@ -4,7 +4,7 @@
     background-color: var(--black);
     padding-top: 192px;
     padding-bottom: 66px;
-    transition: 2s background-color;
+    transition: 1s background-color;
     .block__01 {
       display: flex;
       align-items: flex-start;
@@ -77,6 +77,11 @@
       position: absolute;
       right: -5vw;
       bottom: 0;
+      opacity: 0;
+    }
+    .reveal__pc {
+      opacity: 1;
+      transition: 2s opacity;
     }
   }
   .what__we__do,

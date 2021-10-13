@@ -1,7 +1,18 @@
+import { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
+  const location = useLocation();
+  const [revealPcImage, setRevealImage] = useState();
+
+  useEffect(() => {
+    console.log(location);
+    setRevealImage(false);
+    setTimeout(() => {
+      setRevealImage(true);
+    }, 500);
+  }, [location]);
   return (
     <div className="jumbotron" style={{ ...customStyle }}>
       <div className="container">
@@ -47,7 +58,7 @@ const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
             </div>
           </div>
         </div>
-        <div className="img__pc">
+        <div className={`img__pc ${revealPcImage && "reveal__pc"}`}>
           <img src={pcImg} alt="" width="100%" />
         </div>
       </div>

@@ -39,7 +39,7 @@ const Home = () => {
           ...(location.hash === "#about" && { backgroundColor: "#010101" }),
         }}
       />
-      <SliderSection />
+      {location.hash !== "#about" && <SliderSection />}
       <Partners />
       <TestimonySlides />
     </div>
