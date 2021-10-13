@@ -309,6 +309,9 @@
         transform: scale(0.8);
         transform-origin: 40px 0;
         padding: 0;
+        .question {
+          display: none;
+        }
         .slider__controls {
           margin-top: 20px;
           display: none;
@@ -320,6 +323,23 @@
           &::-webkit-scrollbar {
             display: none;
           }
+          .slider {
+            .cover {
+              .images {
+                &:nth-of-type(1) {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+        .what__offer {
+          width: 100%;
+          h1 {
+            transform: scale(0.8);
+            text-align: center;
+            margin: auto;
+          }
         }
       }
     }
@@ -327,7 +347,8 @@
       h1 {
         text-align: center;
         transform: scale(0.8);
-        transform-origin: 40px 0;
+        transform-origin: -50% 0;
+        width: 100%;
       }
       .partner__container {
         overflow-x: scroll;
@@ -337,6 +358,7 @@
         transform: scale(0.8);
         transform-origin: 40px 0;
         min-width: 120%;
+        margin-top: 10px;
         &::-webkit-scrollbar {
           display: none;
         }
@@ -353,6 +375,12 @@
         min-width: 120%;
         .what__offer {
           text-align: center;
+          width: 100%;
+          margin-bottom: 20px;
+          h1 {
+            transform: scale(0.8);
+            transform-origin: -20% 0;
+          }
         }
         .slider__controls {
           display: none;
@@ -363,6 +391,74 @@
           scrollbar-width: none;
           &::-webkit-scrollbar {
             display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .home {
+    .what__we__do {
+      padding-bottom: 0;
+      .cover__ {
+        .what__offer {
+          width: 100%;
+          h1 {
+            transform: scale(0.8);
+            text-align: center;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .partners {
+      h1 {
+        text-align: center;
+        transform: scale(0.7);
+        transform-origin: -40% 0;
+      }
+    }
+    .testimonies {
+      .cover__ {
+        .what__offer {
+          h1 {
+            transform: scale(0.8);
+            transform-origin: -240px 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 335px) {
+  .home {
+    .what__we__do {
+      padding-bottom: 0;
+      .cover__ {
+        .what__offer {
+          width: 100%;
+          h1 {
+            transform: scale(0.8);
+            text-align: center;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .partners {
+      h1 {
+        text-align: center;
+        transform: scale(0.7);
+        transform-origin: -40% 0;
+      }
+    }
+    .testimonies {
+      .cover__ {
+        .what__offer {
+          h1 {
+            transform: scale(0.7);
+            transform-origin: -180px 0;
           }
         }
       }

@@ -16,6 +16,10 @@ html {
   --black: #0d0d0d;
   --white: white;
   --light-blue: #e3faff;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 .container {
   max-width: 90vw;

@@ -58,9 +58,11 @@
     nav {
       transform: scale(0.8);
       padding: 0;
+      width: 120%;
+      transform-origin: 40px 0;
       ul {
         li {
-          margin: 0 calc(64px / 5);
+          margin: 0 calc(64px / 6);
           a {
           }
         }
@@ -74,3 +76,8 @@
     }
   }
 }
+// @media (max-width: 414px) {
+//     .header{
+//         na
+//     }
+// }
