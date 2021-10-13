@@ -4,6 +4,7 @@
     background-color: var(--black);
     padding-top: 192px;
     padding-bottom: 66px;
+    transition: 2s background-color;
     .block__01 {
       display: flex;
       align-items: flex-start;
@@ -15,6 +16,7 @@
           font-weight: 800;
           line-height: 78px;
           margin-bottom: 22px;
+          max-width: 412px;
           span {
             color: var(--gradient);
             font-size: 18px;
@@ -73,11 +75,12 @@
     .img__pc {
       max-width: 800px;
       position: absolute;
-      right: 0;
+      right: -5vw;
       bottom: 0;
     }
   }
-  .what__we__do {
+  .what__we__do,
+  .testimonies {
     background-color: var(--light-blue);
     padding: 64px 0;
 
@@ -165,6 +168,81 @@
         background-color: #ffe3f6;
         min-width: 192px;
         min-height: 192px;
+      }
+    }
+  }
+  .testimonies {
+    .cover__ {
+      margin-left: 0;
+      max-width: 100%;
+      .what__offer {
+        h1 {
+          color: #48e841;
+          font-size: 64px;
+          max-width: fit-content;
+          margin-left: 78px;
+        }
+      }
+      .image__slider {
+        overflow: hidden;
+        .slider {
+          display: flex;
+          transition: 0.8s all;
+          .cover {
+            display: flex;
+            align-items: flex-start;
+            border-radius: 9px;
+            background-color: var(--white);
+            margin-right: 35px;
+            padding: 36px 24px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+            p {
+              margin: 0;
+              text-align: left;
+              font-size: 22px;
+              line-height: 35px;
+            }
+            .text {
+              text-align: left;
+              font-size: 18px;
+              line-height: 28px;
+              padding: 18px 0;
+              background: var(--gradient);
+              position: relative;
+              min-height: 300px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 18px;
+              .background__modifier {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                height: calc(100% - 2px);
+                background-color: var(--white);
+                top: 1px;
+                z-index: 1;
+              }
+              span {
+                position: relative;
+                z-index: 2;
+              }
+            }
+            .first__section {
+              margin-right: 24px;
+              .avatar {
+                width: 96px;
+                height: 96px;
+                background-color: rgba(45, 93, 215, 0.2);
+                clip-path: circle(calc(100% / 2) at 50% 50%);
+              }
+              .quote {
+                margin-top: 34px;
+                font-size: 128px;
+              }
+            }
+          }
+        }
       }
     }
   }

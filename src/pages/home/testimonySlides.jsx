@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { Quote } from "../../img/quote";
 import { sliderImages } from "../../utils/sliderImages";
 
-const SliderSection = () => {
-  const sliderImageWidth = 420;
+const TestimonySlides = () => {
+  const sliderImageWidth = 520;
   const slider = useRef(null);
   const [sliderWidth, setSliderWidth] = useState({
     scrollWidth: 0,
@@ -25,7 +26,7 @@ const SliderSection = () => {
     const remaining = scrollWidth - (currentOffset + clientWidth);
     console.log(remaining);
     if (remaining <= scrollWidth && scrollWidth > clientWidth) {
-      setOffset(currentOffset + -sliderImageWidth);
+      setOffset(currentOffset + -(sliderImageWidth / 2));
     }
   };
 
@@ -34,21 +35,18 @@ const SliderSection = () => {
     const remaining = scrollWidth - (currentOffset + clientWidth);
     console.log(remaining, currentOffset, sliderImageWidth);
     if (remaining > clientWidth) {
-      setOffset(currentOffset - -sliderImageWidth);
+      setOffset(currentOffset - -(sliderImageWidth / 2));
     }
   };
   return (
-    <section className="what__we__do">
+    <section className="testimonies">
       <div className="container">
         <div className="cover__">
           <div className="what__offer">
             <h1>
-              <span className="gradient__text">hARMONIC STUDIOZ</span> What Do
-              We Offer
+              <span className="gradient__text">hARMONIC STUDIOZ</span>{" "}
+              Testimonies
             </h1>
-            <div className="question">
-              <img src="img/questions/bro.png" alt="" width="100%" />
-            </div>
           </div>
           <div className="image__slider">
             <div
@@ -57,16 +55,37 @@ const SliderSection = () => {
               style={{ transform: `translateX(${currentOffset}px)` }}>
               {sliderImages.map((image, idx) => {
                 return (
-                  <div className="cover" key={idx}>
-                    <div
-                      className="images"
-                      style={{
-                        minWidth: sliderImageWidth,
-                        maxWidth: sliderImageWidth,
-                      }}>
-                      <img src={image.url} alt="" width="100%" />
+                  <div
+                    className="cover"
+                    key={idx}
+                    style={{
+                      minWidth: sliderImageWidth,
+                    }}>
+                    <div className="first__section">
+                      <div className="avatar">
+                        <img src="" alt="" width="100%" />
+                      </div>
+                      <div className="quote">
+                        <Quote />
+                      </div>
                     </div>
-                    <p>{image.name}</p>
+                    <div className="second__section">
+                      <p className="name">
+                        {" "}
+                        <span className="gradient__text">OMOHLILY HAIR</span>
+                      </p>
+                      <div className="text">
+                        <div className="background__modifier"></div>
+                        <span>
+                          I got referred to Harmonic Studioz and It's been
+                          awesome. Even when I had no idea of what design I
+                          wanted, they created the perfect design for my brand.
+                          Quality printing as well at a giveaway price. Thank
+                          you Harmonic Studioz, it's been great working with you
+                          and we will do more in future
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 );
               })}
@@ -86,4 +105,4 @@ const SliderSection = () => {
   );
 };
 
-export default SliderSection;
+export default TestimonySlides;

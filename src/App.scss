@@ -6,6 +6,7 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 html {
   --gradient: linear-gradient(93.42deg, #47fa37 0%, #c1a801 95.21%);
@@ -25,4 +26,7 @@ html {
   background: linear-gradient(120.42deg, #47fa37 0%, #c1a801 30.21%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.active__link {
+  color: #47fa37 !important;
 }

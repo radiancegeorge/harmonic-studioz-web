@@ -1,9 +1,9 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const Jumbotron = () => {
+const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
   return (
-    <div className="jumbotron">
+    <div className="jumbotron" style={{ ...customStyle }}>
       <div className="container">
         <div className="section__01">
           <div className="block__01">
@@ -13,15 +13,9 @@ const Jumbotron = () => {
             <div className="everything__tech">
               <h1>
                 <span className="gradient__text">eVERYTHING TECH</span>
-                Harmonic <br />
-                Studioz
+                {mainHeader}
               </h1>
-              <p>
-                The most trustworthy plug for Graphics Design, Motion graphics,
-                Branding, Website Development & Maintenance, Software
-                Development & Maintenance, Social Media Management, Contents
-                Creation and Strategy, Printing and Packaging and lots more.
-              </p>
+              <p>{mainText}</p>
               <div className="link__reach">
                 <div className="extra__bg"></div>
                 <NavLink className="gradient__text" to="/contact">
@@ -54,7 +48,7 @@ const Jumbotron = () => {
           </div>
         </div>
         <div className="img__pc">
-          <img src="img/pc.png" alt="" width="100%" />
+          <img src={pcImg} alt="" width="100%" />
         </div>
       </div>
     </div>

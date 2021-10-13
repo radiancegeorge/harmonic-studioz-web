@@ -1,0 +1,38 @@
+.footer {
+  padding: 53px 0;
+  background-color: var(--black);
+  color: var(--light-blue);
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .contact__detail {
+      display: flex;
+      color: var(--light-blue);
+      a {
+        color: var(--light-blue);
+        font-size: 28px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 15px;
+        }
+      }
+      .number {
+        font-size: 28px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        margin-right: 51px;
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+    .back__to__top {
+      font-size: 40px;
+      cursor: pointer;
+    }
+  }
+}
