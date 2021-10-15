@@ -130,6 +130,8 @@
             }
             .images {
               margin: 0 calc(48px / 2);
+              border-radius: 50px;
+              overflow: hidden;
             }
           }
         }
@@ -170,9 +172,12 @@
       justify-content: space-between;
       margin-top: 48px;
       & > div {
-        background-color: #ffe3f6;
+        background-color: transparent;
         min-width: 192px;
         min-height: 192px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { Quote } from "../../img/quote";
-import { sliderImages } from "../../utils/sliderImages";
+import { sliderImages, testimonies } from "../../utils/sliderImages";
 
 const TestimonySlides = () => {
   const [sliderImageWidth, setWidth] = useState(520);
@@ -61,7 +61,7 @@ const TestimonySlides = () => {
               className="slider"
               ref={slider}
               style={{ transform: `translateX(${currentOffset}px)` }}>
-              {sliderImages.map((image, idx) => {
+              {testimonies.map((testimony, idx) => {
                 return (
                   <div
                     className="cover"
@@ -71,7 +71,7 @@ const TestimonySlides = () => {
                     }}>
                     <div className="first__section">
                       <div className="avatar">
-                        <img src="" alt="" width="100%" />
+                        <img src={testimony.avatar} alt="" width="100%" />
                       </div>
                       <div className="quote">
                         <Quote />
@@ -80,18 +80,11 @@ const TestimonySlides = () => {
                     <div className="second__section">
                       <p className="name">
                         {" "}
-                        <span className="gradient__text">OMOHLILY HAIR</span>
+                        <span className="gradient__text">{testimony.name}</span>
                       </p>
                       <div className="text">
                         <div className="background__modifier"></div>
-                        <span>
-                          I got referred to Harmonic Studioz and It's been
-                          awesome. Even when I had no idea of what design I
-                          wanted, they created the perfect design for my brand.
-                          Quality printing as well at a giveaway price. Thank
-                          you Harmonic Studioz, it's been great working with you
-                          and we will do more in future
-                        </span>
+                        <span>{testimony.text}</span>
                       </div>
                     </div>
                   </div>

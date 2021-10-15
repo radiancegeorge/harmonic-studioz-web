@@ -1,3 +1,5 @@
+import { partners } from "../../utils/sliderImages";
+
 const Partners = () => {
   return (
     <section className="partners">
@@ -7,11 +9,11 @@ const Partners = () => {
           Partners
         </h1>
         <div className="partner__container">
-          <div className="boxes"></div>
-          <div className="boxes"></div>
-          <div className="boxes"></div>
-          <div className="boxes"></div>
-          <div className="boxes"></div>
+          {partners.map((data, idx) => (
+            <div className="boxes">
+              <img src={`img/${data}`} alt="" width="100%" />
+            </div>
+          ))}
         </div>
       </div>
     </section>
