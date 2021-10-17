@@ -7,6 +7,7 @@ import SliderSection from "./sliderSection";
 import TestimonySlides from "./testimonySlides";
 
 const WhatWeDo = lazy(() => import("./whatWeDo"));
+const JoinOurTeam = lazy(() => import("./joinOurTeam"));
 
 const Home = () => {
   const location = useLocation();
@@ -16,9 +17,9 @@ const Home = () => {
     location.hash !== "#about" ? (
       <span>
         The most trustworthy plug for Graphics Design, Motion graphics,
-        Branding, Website Development & Maintenance, Software Development &
-        Maintenance, Social Media Management, Contents Creation and Strategy,
-        Printing and Packaging and lots more.
+        Branding, Website Development &amp; Maintenance, Software Development
+        &apm; Maintenance, Social Media Management, Contents Creation and
+        Strategy, Printing and Packaging and lots more.
       </span>
     ) : (
       <span>
@@ -45,8 +46,9 @@ const Home = () => {
       />
       {location.hash !== "#about" && <SliderSection />}
       {location.hash === "#about" && (
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<p></p>}>
           <WhatWeDo />
+          <JoinOurTeam />
         </Suspense>
       )}
 

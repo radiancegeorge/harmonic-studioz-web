@@ -34,7 +34,32 @@ body {
 .active__link {
   color: #47fa37 !important;
 }
-
+.link__reach {
+  background: var(--gradient);
+  width: fit-content;
+  border-radius: 6px;
+  position: relative;
+  .extra__bg {
+    min-height: calc(100% - 2px);
+    left: 1px;
+    top: 1px;
+    width: calc(100% - 2px);
+    background-color: var(--black);
+    position: absolute;
+    z-index: 1;
+  }
+  a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 18px 36px;
+    display: block;
+    background-color: var(--black);
+    z-index: 2;
+    position: relative;
+  }
+  margin-bottom: 207px;
+}
 @media (max-width: 599px) {
   .container {
     max-width: 120%;

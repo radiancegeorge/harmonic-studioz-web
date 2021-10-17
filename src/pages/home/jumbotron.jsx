@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
+import GradientLink from "../../components/gradientLink";
 
 const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
   const location = useLocation();
@@ -30,12 +31,7 @@ const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
                 <img src={pcImg} alt="" width="100%" />
               </div>
               <p>{mainText}</p>
-              <div className="link__reach">
-                <div className="extra__bg"></div>
-                <NavLink className="gradient__text" to="/contact">
-                  WORK WITH US
-                </NavLink>
-              </div>
+              <GradientLink>WORK WITH US</GradientLink>
               <ul className="socials">
                 <li>
                   <a href="#facebook" target="__blank">

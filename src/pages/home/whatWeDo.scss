@@ -22,12 +22,13 @@
           flex-basis: 30%;
           height: 426px;
           background-color: var(--light-blue);
+          margin-bottom: 64px;
         }
         .box {
           flex-basis: 30%;
           margin-bottom: 64px;
           .img {
-            width: 100;
+            width: 100%;
             img {
               width: 100%;
             }
@@ -61,11 +62,212 @@
                 font-size: 24px;
                 line-height: 29px;
                 margin: 14px 0;
+                font-weight: 600;
               }
             }
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .what__we__do__ {
+    .container {
+      padding: 10px;
+      .wrap {
+        h1 {
+          font-size: 40px;
+          text-align: center;
+        }
+      }
+      .display {
+        .box {
+          flex-basis: 100% !important;
+          margin-bottom: 20px !important;
+          h3 {
+            text-align: center;
+            font-size: 28px !important;
+          }
+          .summary {
+            padding: 12px 0 !important;
+          }
+        }
+        .blank__design {
+          flex-basis: 100% !important;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.join__our__team {
+  background-color: var(--light-blue);
+  padding: 24px 0;
+  h1 {
+    font-size: 64px;
+    font-size: 800;
+    margin-bottom: 73px;
+    span {
+      font-size: 18px;
+      display: block;
+    }
+  }
+  .link__reach {
+    .extra__bg {
+      background-color: var(--white);
+    }
+  }
+  .main__body {
+    position: relative;
+    .container {
+      padding-top: 130px;
+      .our__team {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .image {
+          flex-basis: 150%;
+          margin-right: 50px;
+        }
+        .content {
+          h3 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: var(--grey);
+            span {
+              margin-left: 20px;
+            }
+          }
+          .link__reach {
+            margin-bottom: 0;
+          }
+          .text {
+            font-size: 28px;
+            font-weight: 500;
+            color: var(--grey);
+            max-width: 70%;
+            line-height: 34px;
+            margin: 16px 0;
+          }
+        }
+      }
+      .team {
+        margin: 28px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .people__info {
+          flex-basis: 50%;
+          .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 28px;
+            .image__container {
+              max-width: 300px;
+            }
+            .name {
+              font-size: 28px;
+              font-weight: 600;
+              margin-left: 48px;
+              span {
+                display: block;
+                color: var(--grey);
+              }
+            }
+          }
+        }
+        .tag {
+          flex-basis: 10%;
+          p {
+            transform: rotateZ(-90deg);
+            // position: relative;
+            font-size: 96px;
+            font-weight: 800;
+            line-height: 117px;
+            position: absolute;
+            left: 0;
+            color: var(--green);
+          }
+        }
+      }
+    }
+    .white__background {
+      width: 60%;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: var(--white);
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .join__our__team {
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  .main__body {
+    .container {
+      .our__team {
+        flex-direction: column;
+        .image {
+          margin: 0 !important;
+        }
+        h3 {
+          font-size: 30px !important;
+          justify-content: center !important;
+          margin-top: 24px;
+        }
+        .text {
+          max-width: 100% !important;
+          text-align: center;
+        }
+        .link__reach {
+          margin: auto;
+        }
+      }
+      .team {
+        display: block !important;
+        .people__info {
+          display: block !important;
+          flex-basis: 100% !important;
+
+          .wrap {
+            display: block !important;
+            .image__container {
+              width: 100%;
+              max-width: 100% !important;
+            }
+            .name {
+              text-align: center;
+              margin-left: 0 !important;
+              font-size: 20px !important;
+            }
+          }
+        }
+        .tag {
+          p {
+            transform: rotateZ(0deg) !important;
+            font-size: 30px !important;
+            text-align: center;
+            position: static !important;
+          }
+        }
+      }
+    }
+    .white__background {
+      width: 100% !important;
     }
   }
 }
