@@ -1,9 +1,13 @@
 import { useLocation } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import "./index.scss";
 import Jumbotron from "./jumbotron";
 import Partners from "./Partners";
 import SliderSection from "./sliderSection";
 import TestimonySlides from "./testimonySlides";
+
+const WhatWeDo = lazy(() => import("./whatWeDo"));
+
 const Home = () => {
   const location = useLocation();
   const heading =
@@ -40,10 +44,12 @@ const Home = () => {
         }}
       />
       {location.hash !== "#about" && <SliderSection />}
+      {location.hash === "#about" && (
+        <Suspense fallback={<p>Loading...</p>}>
+          <WhatWeDo />
+        </Suspense>
+      )}
 
-      <section className="what__we__do__">
-        <div className="container"></div>
-      </section>
       <Partners />
       <TestimonySlides />
     </div>

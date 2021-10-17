@@ -27,9 +27,9 @@ body {
   position: relative;
 }
 .gradient__text {
-  background: linear-gradient(120.42deg, #47fa37 0%, #c1a801 30.21%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(120.42deg, #47fa37 0%, #c1a801 30.21%) !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
 .active__link {
   color: #47fa37 !important;

@@ -169,12 +169,12 @@
     .partner__container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-top: 48px;
       & > div {
         background-color: transparent;
-        min-width: 192px;
-        min-height: 192px;
+        max-width: 192px;
+        // min-height: 192px;
         display: flex;
         align-items: center;
         justify-content: center;
