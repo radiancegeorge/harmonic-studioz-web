@@ -62,7 +62,7 @@ const WhatWeDo = () => {
 
                 <ul>
                   <li className="gradient__text">
-                    Mind blow design structure and transition.
+                    Mind blowing design structure and transition.
                   </li>
                   <li className="gradient__text">
                     Detail Brand communication.

@@ -234,6 +234,9 @@
 }
 
 @media (max-width: 559px) {
+  .see__more {
+    display: flex !important;
+  }
   .home {
     .jumbotron {
       height: fit-content;
@@ -461,4 +464,19 @@
       }
     }
   }
+}
+
+.see__more {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  margin-top: -10px;
+  color: var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  svg {
+    margin-left: 5px;
+  }
+  display: none;
 }

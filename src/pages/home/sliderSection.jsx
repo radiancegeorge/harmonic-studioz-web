@@ -80,6 +80,9 @@ const SliderSection = () => {
               <FaArrowCircleRight />
             </div>
           </div>
+          <div className="see__more">
+            Slide on image for more <FaArrowCircleRight />
+          </div>
         </div>
       </div>
     </section>

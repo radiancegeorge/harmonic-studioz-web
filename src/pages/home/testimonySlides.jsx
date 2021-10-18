@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { Quote } from "../../img/quote";
-import { sliderImages, testimonies } from "../../utils/sliderImages";
+import { testimonies } from "../../utils/sliderImages";
 
 const TestimonySlides = () => {
   const [sliderImageWidth, setWidth] = useState(520);
@@ -99,6 +99,11 @@ const TestimonySlides = () => {
             <div className="front" onClick={handleFoward}>
               <FaArrowCircleRight />
             </div>
+          </div>
+          <div
+            className="see__more"
+            style={{ marginTop: 20, marginBottom: -40 }}>
+            Slide on image for more <FaArrowCircleRight />
           </div>
         </div>
       </div>
