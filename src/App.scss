@@ -7,6 +7,7 @@
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  outline: none;
 }
 html {
   --gradient: linear-gradient(93.42deg, #47fa37 0%, #c1a801 95.21%);
@@ -20,6 +21,9 @@ html {
 }
 body {
   overflow-x: hidden;
+}
+.add__bg {
+  background-image: url("./img/image 1.png");
 }
 .container {
   max-width: 90vw;

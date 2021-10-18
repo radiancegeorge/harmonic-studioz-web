@@ -1,15 +1,30 @@
+import { useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import "./header.scss";
-const Header = () => {
+const Header = ({ setLocation }) => {
   const location = useLocation();
 
+  useEffect(() => {
+    setLocation(location);
+  }, [location]);
   return (
-    <header className="header">
+    <header
+      className="header"
+      style={{
+        ...(location.pathname === "/contact" && {
+          backgroundColor: "transparent",
+        }),
+      }}>
       <div className="container">
         <div className="header__logo">
           <img src="img/my Brand 1.png" alt="" width="100%" />
         </div>
-        <nav>
+        <nav
+          style={{
+            ...(location.pathname === "/contact" && {
+              backgroundColor: "transparent",
+            }),
+          }}>
           <ul>
             <li>
               <Link
@@ -41,11 +56,15 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-          <NavLink className="hire__us" to="/#contact">
-            hIRE US
-          </NavLink>
+          {location.pathname !== "/contact" && (
+            <NavLink className="hire__us" to="/contact">
+              hIRE US
+            </NavLink>
+          )}
         </nav>
-        <div className="half__circle"></div>
+        {location.pathname !== "/contact" && (
+          <div className="half__circle"></div>
+        )}
       </div>
     </header>
   );
