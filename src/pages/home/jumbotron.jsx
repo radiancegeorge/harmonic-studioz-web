@@ -34,22 +34,30 @@ const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
               <GradientLink>WORK WITH US</GradientLink>
               <ul className="socials">
                 <li>
-                  <a href="#facebook" target="__blank">
+                  <a
+                    href="https://facebook.com/HarmonicStudios-102337181393379/"
+                    target="__blank">
                     <FaFacebook />
                   </a>
                 </li>
                 <li>
-                  <a href="#instagram" target="__blank">
+                  <a
+                    href="https://instagram.com/harmonic_studioz"
+                    target="__blank">
                     <FaInstagram />
                   </a>
                 </li>
                 <li>
-                  <a href="#linkdin" target="__blank">
+                  <a
+                    href="https://www.linkedin.com/in/harmonicstudioz/"
+                    target="__blank">
                     <FaLinkedin />
                   </a>
                 </li>
                 <li>
-                  <a href="#twitter" target="__blank">
+                  <a
+                    href="https://twitter.com/HarmonicStudioz"
+                    target="__blank">
                     <FaTwitter />
                   </a>
                 </li>
