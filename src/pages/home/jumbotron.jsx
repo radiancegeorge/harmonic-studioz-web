@@ -24,7 +24,7 @@ const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
             </div>
             <div className="everything__tech">
               <h1>
-                <span className="gradient__text">eVERYTHING TECH</span>
+                <span className="gradient__text">oNE STOP BRAND</span>
                 {mainHeader}
               </h1>
               <div className={`img__pc ${revealPcImage && "reveal__pc"}`}>

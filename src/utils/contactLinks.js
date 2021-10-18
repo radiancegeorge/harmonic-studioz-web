@@ -9,27 +9,27 @@ import { Swirge } from "../img/swirge";
 
 export const contactLinks = [
   {
-    url: "",
+    url: "https://facebook.com/HarmonicStudios-102337181393379/",
     icon: FaFacebook,
   },
   {
-    url: "",
+    url: "https://instagram.com/harmonic_studioz",
     icon: FaInstagram,
   },
   {
-    url: "",
+    url: "https://www.linkedin.com/in/harmonicstudioz/",
     icon: FaLinkedin,
   },
   {
-    url: "",
+    url: "https://twitter.com/HarmonicStudioz",
     icon: FaTwitter,
   },
   {
-    url: "",
+    url: "https://swirge.com/u/HarmonicStudioz",
     icon: Swirge,
   },
   {
-    url: "",
+    url: "https://wa.me/2348025727038",
     icon: FaWhatsapp,
   },
 ];

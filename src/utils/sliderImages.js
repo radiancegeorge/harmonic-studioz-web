@@ -4,7 +4,7 @@ export const sliderImages = [
     name: "Web Development",
   },
   {
-    url: "img/Rectangle 57.png",
+    url: "img/WhatsApp Image 2021-10-18 at 17.37.12.jpeg",
     name: "Branding",
   },
   {

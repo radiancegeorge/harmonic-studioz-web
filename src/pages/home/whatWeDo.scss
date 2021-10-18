@@ -74,6 +74,7 @@
 
 @media (max-width: 599px) {
   .what__we__do__ {
+    padding-top: 30px;
     .container {
       padding: 10px;
       .wrap {
@@ -172,6 +173,8 @@
             margin-bottom: 28px;
             .image__container {
               max-width: 300px;
+              max-height: 300px;
+              overflow: hidden;
             }
             .name {
               font-size: 28px;

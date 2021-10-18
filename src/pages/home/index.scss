@@ -237,6 +237,7 @@
   .home {
     .jumbotron {
       height: fit-content;
+      padding-bottom: 20px !important;
       .block__01 {
         transform: scale(0.8);
         transform-origin: 40px -500px;

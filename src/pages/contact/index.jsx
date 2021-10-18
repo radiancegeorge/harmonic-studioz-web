@@ -5,11 +5,7 @@ const Contact = () => {
     <div className="contact">
       <div className="container">
         <h1>
-          Contact Us{" "}
-          <span>
-            You can leave us a message or reach us through the following
-            platforms
-          </span>
+          Contact Us <span>You can leave us a message</span>
         </h1>
         <form
           action=""
@@ -38,6 +34,7 @@ const Contact = () => {
           </label>
           <button type="submit">SEND MESSAGE</button>
         </form>
+        <h4>You can also reach us through the following platforms</h4>
         <ul>
           {contactLinks.map((data, idx) => (
             <li key={idx}>

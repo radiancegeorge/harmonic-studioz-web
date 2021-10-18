@@ -29,7 +29,11 @@ const WhatWeDo = () => {
             </div>
             <div className="box">
               <div className="img">
-                <img src="img/Rectangle 62.png" alt="" width="100%" />
+                <img
+                  src="img/WhatsApp Image 2021-10-18 at 17.37.12.jpeg"
+                  alt=""
+                  width="100%"
+                />
               </div>
               <h3>Branding</h3>
               <div className="summary">
@@ -43,7 +47,14 @@ const WhatWeDo = () => {
             </div>
             <div className="box">
               <div className="img">
-                <img src="img/Rectangle 62.png" alt="" width="100%" />
+                <video
+                  src="video/WhatsApp Video 2021-10-18 at 17.37.12.mp4"
+                  alt=""
+                  width="100%"
+                  autoPlay={true}
+                  muted
+                  loop
+                />
               </div>
               <h3>Visual and Motion Effect</h3>
               <div className="summary">

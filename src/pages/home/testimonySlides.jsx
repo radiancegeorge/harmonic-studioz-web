@@ -33,7 +33,7 @@ const TestimonySlides = () => {
     const { scrollWidth, clientWidth } = sliderWidth;
     const remaining = scrollWidth - (currentOffset + clientWidth);
     console.log(remaining);
-    if (remaining <= scrollWidth && scrollWidth > clientWidth) {
+    if (remaining <= scrollWidth + 300 && scrollWidth > clientWidth) {
       setOffset(currentOffset + -(sliderImageWidth / 2));
     }
   };
