@@ -23,7 +23,7 @@ const Home = () => {
       </span>
     ) : (
       <span>
-        Founded on 13th August 2018, Harmonic Studioz have come a long way from
+        Founded on 13th August 2019, Harmonic Studioz have come a long way from
         its humble beginnings to being a household name in the world with
         different partnerships and contracts all over the world. <br />
         <br />
