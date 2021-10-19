@@ -173,6 +173,7 @@
         .slider {
           display: flex;
           transition: 0.8s all;
+          align-items: center !important;
           .cover {
             display: flex;
             align-items: flex-start;

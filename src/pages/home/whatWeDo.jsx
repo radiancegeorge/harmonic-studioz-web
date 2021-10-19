@@ -54,6 +54,7 @@ const WhatWeDo = () => {
                   autoPlay={true}
                   muted
                   loop
+                  controls
                 />
               </div>
               <h3>Visual and Motion Effect</h3>
