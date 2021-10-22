@@ -29,6 +29,8 @@
           font-size: 18px;
           font-weight: 600;
           margin-bottom: 22px;
+          z-index: 2;
+          position: relative;
         }
 
         .socials {
@@ -53,6 +55,7 @@
       right: -5vw;
       bottom: 0;
       opacity: 0;
+      z-index: 1;
     }
     .reveal__pc {
       opacity: 1;
@@ -480,4 +483,29 @@
     margin-left: 5px;
   }
   display: none;
+}
+
+@media (min-width: 700px) and (max-width: 1500px) {
+  .home {
+    .testimonies {
+      .cover__ {
+        .slider__controls {
+          margin-top: 20px;
+        }
+      }
+    }
+    .what__we__do {
+      .cover__ {
+        .slider__controls {
+          margin-top: 20px;
+        }
+      }
+    }
+    .jumbotron {
+      .img__pc {
+        max-width: 50%;
+        right: 0;
+      }
+    }
+  }
 }

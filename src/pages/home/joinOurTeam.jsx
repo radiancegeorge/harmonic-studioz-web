@@ -9,7 +9,7 @@ const JoinOurTeam = () => {
         <div className="wrap">
           <h1>
             <span className="gradient__text">hARMONIC STUDIOZ</span>
-            Join our team
+            Meet the team
           </h1>
         </div>
       </div>

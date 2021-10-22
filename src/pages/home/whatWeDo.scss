@@ -175,6 +175,7 @@
               max-width: 300px;
               max-height: 300px;
               overflow: hidden;
+              min-width: 300px;
             }
             .name {
               font-size: 28px;
@@ -271,6 +272,106 @@
     }
     .white__background {
       width: 100% !important;
+    }
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1500px) {
+  .what__we__do__ {
+    .container {
+      padding-left: 0;
+      .wrap {
+        .display {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 5%;
+        }
+      }
+    }
+  }
+  .join__our__team {
+    .main__body {
+      .container {
+        .our__team {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .content {
+            .text {
+              font-size: 20px;
+              line-height: 25px;
+            }
+          }
+        }
+        .team {
+          .tag {
+            p {
+              margin-left: -80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+  .join__our__team {
+    h1 {
+      margin-bottom: 20px;
+      margin-top: 50px;
+    }
+    .main__body {
+      .container {
+        .our__team {
+          display: grid;
+          grid-template-columns: 1fr;
+          .content {
+            h3 {
+              justify-content: center;
+            }
+            .text {
+              text-align: center;
+              margin: auto;
+            }
+            .link__reach {
+              margin: auto;
+            }
+          }
+        }
+        .team {
+          .tag {
+            p {
+              margin-left: -180px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .what__we__do__ {
+    .container {
+      .wrap {
+        .display {
+          .blank__design {
+            margin-bottom: 10px;
+          }
+          .box {
+            h3 {
+              font-size: 25px;
+              margin: 10px 0;
+            }
+            .summary {
+              padding: 5px 0;
+              ul {
+                li {
+                  font-size: 15px;
+                  margin: 2px 0;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
