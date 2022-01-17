@@ -19,11 +19,11 @@ const Jumbotron = ({ mainText, mainHeader, pcImg, customStyle }) => {
       <div className="container">
         <div className="section__01">
           <div className="block__01">
-            <div className="logo">
-              <img src="img/my Brand 1.png" alt="" width="100%" />
-            </div>
             <div className="everything__tech">
               <h1>
+                <div className="logo">
+                  <img src="img/H logo w.png" alt="" width="100%" />
+                </div>
                 <span className="gradient__text">oNE STOP BRAND</span>
                 {mainHeader}
               </h1>

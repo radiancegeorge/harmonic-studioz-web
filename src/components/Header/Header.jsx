@@ -17,7 +17,7 @@ const Header = ({ setLocation }) => {
       }}>
       <div className="container">
         <div className="header__logo">
-          <img src="img/my Brand 1.png" alt="" width="100%" />
+          <img src="img/H logo 3d.png" alt="" width="100%" />
         </div>
         <nav
           style={{
